@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -1 -a -v --group-directories-first | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/, /g' -e 's/,$/\n/'
+
